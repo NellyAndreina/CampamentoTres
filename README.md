@@ -1,7 +1,7 @@
 # CampamentoTres
 Entrenamiento en cypress
 
-El siguente proyecto es una solucion automatizada para el sitio https://www.adidas.co/
+El siguente proyecto es una solucion automatizada para el sitio https://www.adidas.cl/
 
 En este proceso se requiere lo siguiente: 
 

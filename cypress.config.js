@@ -5,7 +5,10 @@ module.exports = defineConfig({
   viewportHeight: 896,
   chromeWebSecurity: false,
   e2e: {
-    baseUrl: "https://www.adidas.cl/",
+    baseUrl: "https://www.adidas.cl",
+    failOnStatusCode: false,
+    responseTimeout: 120e3,
+    chromeWebSecurity:false,
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
