@@ -1,21 +1,26 @@
 # CampamentoTres
 Entrenamiento en cypress
 
-El siguente proyecto es una solucion automatizada para el sitio https://www.adidas.co/
+El siguente proyecto es una solucion automatizada para el sitio https://www.adidas.cl/
 
 En este proceso se requiere lo siguiente: 
 
 - Realizar la automatización en viewport de iPhone XR. Referencia: https://docs.cypress.io/api/commands/viewport 
 - Utilizar metodología POM en toda la página.
-- Utilizar el standard_user para ingresar a la aplicación.
-- Crear casos de prueba automatizados para el formulario de login.
-- Crear casos de prueba automatizados para el listado de catálogo. (Cards, imagenes, títulos, subtítulos, etc).
-- Crear casos de prueba automatizados para el carrito de compra.
-- Crear casos de prueba automatizados para el formulario de checkout (Step #1)
-- Crear casos de prueba automatizados para la pantalla de detalle de checkout (Step #2)
-- Automatizar un flujo E2E, donde se realice la compra de mínimo 3 artículos y se finalice su compra al 100%.
-
-
+- Crear casos de prueba automatizados para seleccionar una categoría a elección.
+- Crear casos de prueba automatizados para seleccionar una subcategoría.
+- Crear casos de prueba automatizados para verificar que la card de los productos tengan un precio.
+- Crear casos de prueba automatizados para buscar un producto.
+- Crear casos de prueba automatizados para desplazarse por el paginador.
+- Crear casos de prueba automatizados para seleccionar un producto y marcarlo como favorito. Verificar que quede almacenado en la sección favoritos.
+- Crear casos de prueba automatizados para seleccionar un segundo producto y agregarlo al carrito.
+- Crear casos de prueba automatizados para seleccionar una talla.
+- Crear casos de prueba automatizados para agregar mas items del producto.
+- Crear casos de prueba automatizados para presionar el botón de Continuar compra.
+- Crear casos de prueba automatizados para agregar una nueva dirección.
+- Crear casos de prueba automatizados para seleccionar una opción de envío.
+- Crear casos de prueba automatizados para seleccionar un método de pago.
+- Automatizar un flujo, donde se confirme los datos de la compra (No finalizar la compra).
 
 ## Instalacion
 
