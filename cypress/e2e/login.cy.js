@@ -7,8 +7,10 @@ describe('Prueba de login con usuarios', () => {
     loginPage.visitPageLogin();
   });
   it('Login con usuario', () => {
-    loginPage.getemail(userData.email) 
-    loginPage.getPassword(userData.password)
-    loginPage.submit()
+    cy.wait(5000)
+    cy.get('.decline-button').click({force:true});
+    loginPage.typeEmail(userData.email) 
+    loginPage.typePassword(userData.password)
+    loginPage.clickOnLogin()
     });
   });

@@ -1,23 +1,21 @@
 export class LoginRegister { 
-    constructor() {
-      this.emailInput = '#email';
-      this.passwordInput = '#password';
-      //this.loginButton = '#login-button';
-    }
+    
     visitPageLogin () {
       cy.visit('/');
+      //cy.get('.close').click();
+      cy.get('.UserNav_list__dJ5pz > :nth-child(2)').click({force:true});
     }
-    getUsername = (email) => {
-      cy.get(this.emailInput).clear().type(email);
+
+    typeEmail = (email) => {
+      cy.get('#email').type(email,{force:true});
     }
-    getPassword = (password) => {
-      cy.get(this.passwordInput).clear().type(password);
+
+    typePassword = (password) => {
+      cy.get('#password').type(password,{force:true});
     }
-    //clickLogin = () => {
-      //cy.get(this.loginButton).click();
-    //}
-    submit = () => {
-      this.clickLogin();
+
+    clickOnLogin = () => {
+      cy.get('.Button_root__mZAHs').click({force:true});
     }
 }
 //cy.get('.Auth_form-actions__prI_q > .Button_root__mZAHs')
