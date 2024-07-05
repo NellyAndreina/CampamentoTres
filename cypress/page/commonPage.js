@@ -1,13 +1,12 @@
 import { LoginRegister } from './loginPage';
 
-const login = LoginRegister();
-const userData = require('../fixtures/personalInfo.json');
+const loginPage = new LoginRegister();
 
 export default class CommonPage {
-    userLogin (){
-        login.visitPageLogin();
-        login.getemail(userData.email);
-        login.getpassword(userData.password);
-        //login.submit();
+    userLogin (email, password){
+        loginPage.visitPageLogin();
+        loginPage.typeEmail(email);
+        loginPage.typePassword(password);
+        loginPage.clickOnLogin();
     }
 }
