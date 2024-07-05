@@ -14,8 +14,7 @@ export class LoginRegister {
       cy.get('#password').type(password,{force:true});
     }
 
-    clickOnLogin = () => {
-      cy.get('.Button_root__mZAHs').click({force:true});
-    }
+    clickOnLogin(){
+        cy.get('button[aria-label="slim"] span').click({force:true});
+      }
 }
-//cy.get('.Auth_form-actions__prI_q > .Button_root__mZAHs')

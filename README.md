@@ -7,6 +7,7 @@ En este proceso se requiere lo siguiente:
 
 - Realizar la automatización en viewport de iPhone XR. Referencia: https://docs.cypress.io/api/commands/viewport 
 - Utilizar metodología POM en toda la página.
+- Crear caso de registrarse e iniciar sesión.
 - Crear casos de prueba automatizados para seleccionar una categoría a elección.
 - Crear casos de prueba automatizados para seleccionar una subcategoría.
 - Crear casos de prueba automatizados para verificar que la card de los productos tengan un precio.
@@ -14,7 +15,6 @@ En este proceso se requiere lo siguiente:
 - Crear casos de prueba automatizados para desplazarse por el paginador.
 - Crear casos de prueba automatizados para seleccionar un producto y marcarlo como favorito. Verificar que quede almacenado en la sección favoritos.
 - Crear casos de prueba automatizados para seleccionar un segundo producto y agregarlo al carrito.
-- Crear casos de prueba automatizados para seleccionar una talla.
 - Crear casos de prueba automatizados para agregar mas items del producto.
 - Crear casos de prueba automatizados para presionar el botón de Continuar compra.
 - Crear casos de prueba automatizados para agregar una nueva dirección.
