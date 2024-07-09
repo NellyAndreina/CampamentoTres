@@ -4,9 +4,11 @@ export class LoginRegister {
       cy.visit('/');
       //cy.get('.close').click();
     }
+
     clickIconLogin = ()  => {
       cy.get('.UserNav_list__dJ5pz > :nth-child(2)').click({force:true});
     }
+
     typeEmail = (email) => {
       cy.get('#email').click().type(email,{force:true});
     }
