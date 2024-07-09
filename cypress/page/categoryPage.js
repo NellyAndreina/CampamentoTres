@@ -2,7 +2,7 @@
 export default class CategoryPage {
 
 visitMobileMenu(){
-    cy.get('.Navbar_megamenu-cms__cBjN3 MegaMenu_megaMenuCms__5k0_O').click(); 
+    cy.get('div.Navbar_megamenu-cms__cBjN3 MegaMenu_megaMenuCms__5k0_O').click(); 
     //cy.get('.Navbar_nav-container-inner__SAqO_')
    // cy.get('.Navbar_nav-container-inner__SAqO_')
 }    
