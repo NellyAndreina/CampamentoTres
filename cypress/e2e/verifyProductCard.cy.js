@@ -28,9 +28,14 @@ describe('Buscar productos', () => {
         categoryPage.visitMobileMenu();
         categoryPage.visitMenuProductos();
         categoryPage.visitMenuOutlet();
-        //productPage.clickBottonVerTodo();
         productPage.searchItem(itemData.productName);
         productPage.clickOnDesireItem();
+        productPage.validateImage();
+        productPage.validatePrice(); 
+        productPage.addFavorite();
+        productPage.clickOnPromotion();
+        productPage.clickOnCookies();
+        //categoryPage.visitMobileMenu();
       });
 });
 

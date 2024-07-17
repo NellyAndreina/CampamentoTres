@@ -7,7 +7,6 @@ visitMobileMenu(){
 
 visitMenuProductos() {
     cy.get('.MobileMegaMenu_mobile-categories__unxpJ > :nth-child(2) > span > p').first().click();
-    //cy.get('https://www.casaideas.cl/').should('be.visible');
 }
 
 visitMenuOutlet() {
