@@ -32,4 +32,7 @@ export default class ProductPage {
     verifyListFavorite(){
         cy.get('.Navbar_nav-container-inner__SAqO_ > .Navbar_megamenu-cms__cBjN3 > .MobileMegaMenu_megamenu-cms-mobile__XaOq_ > .MobileMegaMenu_megamenu-main-menu-wrap__YnVnS > .MobileMegaMenu_mobile-categories__unxpJ > .MobileMegaMenu_megamenu-container-bottom__0MVY0 > :nth-child(1)').click();
     }
+    addItemToCart(){
+        cy.get('.Wishlist_wishlist-add-cart__FoHcK > .Button_root__mZAHs > span').click();
+    }
 }

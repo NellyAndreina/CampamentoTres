@@ -1,5 +1,8 @@
 {
   "devDncies": {
     "cypress": "^13.12.0"
+  },
+  "devDependencies": {
+    "cypress": "^13.13.1"
   }
 }

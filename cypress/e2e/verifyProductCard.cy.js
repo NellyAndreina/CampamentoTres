@@ -37,6 +37,7 @@ describe('Buscar productos', () => {
         productPage.clickOnCookies();
         productPage.verifyMenuFavorite();
         productPage.verifyListFavorite();
+        productPage.addItemToCart();
       });
 });
 
