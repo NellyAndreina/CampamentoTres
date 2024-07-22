@@ -20,12 +20,19 @@ export default class ProductPage {
     addFavorite(){
         cy.get('.PDP_add-to-wishlist-btn__vfxn1').click();
     }
-    clickOnPromotion(){
-        cy.get('.btn2').click();
-    }
+    //clickOnPromotion(){
+        //cy.get('.btn2').click();
+    //}
     clickOnCookies(){
         cy.get('.FeatureBar_root__oNfaI > .Button_root__mZAHs > span').click();
     }
-   
-    //cy.get('.PDP_add-to-cart-button__4FR37')
+    verifyMenuFavorite(){
+        cy.get('.inline-block > .opacity-100').click();
+    }
+    verifyListFavorite(){
+        cy.get('.Navbar_nav-container-inner__SAqO_ > .Navbar_megamenu-cms__cBjN3 > .MobileMegaMenu_megamenu-cms-mobile__XaOq_ > .MobileMegaMenu_megamenu-main-menu-wrap__YnVnS > .MobileMegaMenu_mobile-categories__unxpJ > .MobileMegaMenu_megamenu-container-bottom__0MVY0 > :nth-child(1)').click();
+    }
+    addItemToCart(){
+        cy.get('.Wishlist_wishlist-add-cart__FoHcK > .Button_root__mZAHs > span').click();
+    }
 }

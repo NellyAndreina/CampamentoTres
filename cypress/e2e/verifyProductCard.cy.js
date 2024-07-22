@@ -33,9 +33,11 @@ describe('Buscar productos', () => {
         productPage.validateImage();
         productPage.validatePrice(); 
         productPage.addFavorite();
-        productPage.clickOnPromotion();
+        //productPage.clickOnPromotion();
         productPage.clickOnCookies();
-        //categoryPage.visitMobileMenu();
+        productPage.verifyMenuFavorite();
+        productPage.verifyListFavorite();
+        productPage.addItemToCart();
       });
 });
 
