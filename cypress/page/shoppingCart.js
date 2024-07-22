@@ -24,11 +24,28 @@ export default class VerifyShoppingCart {
         cy.get('#street2').clear().type(street2Num);
         cy.get('#street3').clear().type(street3Depto); 
     }
-    selectDropdown(){
-        cy.get('#select-region').select('Value=COQUIMBO');
-        cy.get('#select-region').should('have.value', 'Value=COQUIMBO');
+    selectDropdownRegion(){
+        return cy.get('div.py-2').click();
     }
-        //.select("Value=COQUIMBO");
-        //cy.get('#select-comuna').click()
-        //.select("value=CANELA");
+    selectElementRegion(){
+        return this.selectDropdownRegion().find('select')
+    }
+    selectByTextRegion(textRegion){
+        this.selectElementRegion().select(textRegion)
+    }
+    selectDropdownComuna(){
+        return cy.get('div.mt-4').click();
+    }
+    selectElementComuna(){
+        return this.selectDropdownComuna().find('select')
+    }
+    selectByTextComuna(textComuna){
+        this.selectElementComuna().select(textComuna)
+    }
+    checkAddListAdress(){
+        cy.get('#save_in_address_book').click();
+    }
+    clickBottonSave(){
+        cy.get('.Checkout_form-buttons-container__nri9J > .Button_root__mZAHs').click();
+    }
     }
