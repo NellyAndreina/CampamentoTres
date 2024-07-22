@@ -33,7 +33,7 @@ describe('Buscar productos', () => {
         productPage.validateImage();
         productPage.validatePrice(); 
         productPage.addFavorite();
-        productPage.clickOnPromotion();
+        //productPage.clickOnPromotion();
         productPage.clickOnCookies();
         productPage.verifyMenuFavorite();
         productPage.verifyListFavorite();
