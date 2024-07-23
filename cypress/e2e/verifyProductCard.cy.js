@@ -24,7 +24,7 @@ describe('Buscar productos', () => {
         login.typePassword(userData.password);  
         login.clickOnLogin();
         cy.wait(5000) //timeout
-        categoryPage.closeSecondMenu();
+        //categoryPage.closeSecondMenu();
         categoryPage.visitMobileMenu();
         categoryPage.visitMenuProductos();
         categoryPage.visitMenuOutlet();
@@ -38,6 +38,7 @@ describe('Buscar productos', () => {
         productPage.verifyMenuFavorite();
         productPage.verifyListFavorite();
         productPage.addItemToCart();
+        productPage.addOtherItemToCart();
       });
 });
 

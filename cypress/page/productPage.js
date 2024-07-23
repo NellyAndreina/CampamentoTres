@@ -20,9 +20,9 @@ export default class ProductPage {
     addFavorite(){
         cy.get('.PDP_add-to-wishlist-btn__vfxn1').click();
     }
-    //clickOnPromotion(){
-        //cy.get('.btn2').click();
-    //}
+    clickOnPromotion(){
+        cy.get('.btn2').click();
+    }
     clickOnCookies(){
         cy.get('.FeatureBar_root__oNfaI > .Button_root__mZAHs > span').click();
     }
@@ -34,5 +34,8 @@ export default class ProductPage {
     }
     addItemToCart(){
         cy.get('.Wishlist_wishlist-add-cart__FoHcK > .Button_root__mZAHs > span').click();
+    }
+    addOtherItemToCart(){
+        cy.get('[aria-label="Add"]').click();
     }
 }

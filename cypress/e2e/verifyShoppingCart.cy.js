@@ -27,7 +27,7 @@ describe('Buscar productos', () => {
     login.typePassword(userData.password);
     login.clickOnLogin();
     cy.wait(5000) //timeout
-    categoryPage.closeSecondMenu();
+    //categoryPage.closeSecondMenu();
     categoryPage.visitMobileMenu();
     categoryPage.visitMenuProductos();
     categoryPage.visitMenuOutlet();
@@ -41,13 +41,16 @@ describe('Buscar productos', () => {
     productPage.verifyMenuFavorite();
     productPage.verifyListFavorite();
     productPage.addItemToCart();
-
+    productPage.addOtherItemToCart();
     shoppingCart.verifyCart();
     shoppingCart.clickOnPay();
     shoppingCart.clickOnModal();
-    shoppingCart.clickOnAddAddress();
+    //shoppingCart.clickOnAddAddress();
+    //shoppingCart.getComponent();
     shoppingCart.addCheckoutInformation(checkoutData.firstName, checkoutData.lastName, checkoutData.rut, checkoutData.telephone, checkoutData.street1Dir,
       checkoutData.street2Num, checkoutData.street3Depto);
-    shoppingCart.selectDropdown();  
+    //shoppingCart.selectByTextRegion('COQUIMBO')
+    //shoppingCart.selectByTextComuna('CANELA')
+    shoppingCart.clickBottonSave()
   });
 });
