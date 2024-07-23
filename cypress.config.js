@@ -6,6 +6,7 @@ module.exports = defineConfig({
   chromeWebSecurity: false,
   e2e: {
     baseUrl: "https://www.casaideas.cl",
+    //specPattern: “/Users/fabian/Desktop/ChallengeCasaIdeas/cypress/e2e/pages/*.spec.js”,
     failOnStatusCode: false,
     responseTimeout: 120e3,
     chromeWebSecurity:false,
@@ -14,3 +15,4 @@ module.exports = defineConfig({
     },
   },
 });
+

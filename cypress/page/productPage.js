@@ -35,4 +35,7 @@ export default class ProductPage {
     addItemToCart(){
         cy.get('.Wishlist_wishlist-add-cart__FoHcK > .Button_root__mZAHs > span').click();
     }
+    addOtherItemToCart(){
+        cy.get('[aria-label="Add"]').click();
+    }
 }
